@@ -1,0 +1,15 @@
+[package]
+name = "endfield-binary-parser"
+version = "0.1.0"
+edition = "2021"
+description = "Binary format parsers (PE, ELF, Mach-O) for IL2CPP analysis"
+
+[dependencies]
+endfield-core = { path = "../core" }
+thiserror = "1.0"
+anyhow = "1.0"
+byteorder = "1.5"
+memmap2 = "0.9"
+scroll = { version = "0.12", features = ["derive"] }
+bitflags = "2.4"
+tracing = "0.1"

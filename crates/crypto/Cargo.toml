@@ -1,0 +1,22 @@
+[package]
+name = "endfield-crypto"
+version = "0.1.0"
+edition = "2021"
+description = "Cryptographic utilities and security features"
+
+[dependencies]
+endfield-core = { path = "../core" }
+thiserror = "1.0"
+anyhow = "1.0"
+aes-gcm = "0.10"
+chacha20poly1305 = "0.10"
+argon2 = "0.5"
+sha2 = "0.10"
+sha3 = "0.10"
+blake3 = "1.5"
+hmac = "0.12"
+rand = "0.8"
+zeroize = { version = "1.7", features = ["derive"] }
+base64 = "0.21"
+hex = "0.4"
+constant_time_eq = "0.3"
